@@ -26,14 +26,31 @@ public class Qsns{
 
 //        Print all prime numbers from 1 to 100.
 
-    int n=7;
-        for(int i=1; i<=10; i++){
-            if(n/2 == !=0){
-                System.out.println("Not Prime");
-            }else{
-                System.out.println(prime);
+        for (int i = 2; i <= 100; i++) {
+
+            boolean isPrime = true;
+
+            for (int j = 2; j < i; j++) {
+
+                if (i % j == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            if (isPrime) {
+                System.out.println(i);
             }
         }
+
+//    int n=7;
+//        for(int i=1; i<=10; i++){
+//            if(n/2 == !=0){
+//                System.out.println("Not Prime");
+//            }else{
+//                System.out.println(prime);
+//            }
+//        }
 
 
     }
